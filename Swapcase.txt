@@ -1,0 +1,10 @@
+def swap_case(s):
+    r='';
+    for char in s:
+        if(char.isupper()==True):
+            r+=(char.lower())
+        elif(char.islower()==True):
+            r+=(char.upper())
+        else:
+            r+=char;
+    return r

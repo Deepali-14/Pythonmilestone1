@@ -1,0 +1,41 @@
+def alphanumeric(s):
+    for i in range(len(s)):
+        if(s[i].isalnum()):
+            return True
+    return False
+        
+def alphabet(s):
+    for i in range(len(s)):
+        if(s[i].isalpha()):
+            return True
+    return False
+        
+def digit(s):
+    for i in range(len(s)):
+        if(s[i].isdigit()):
+            return True
+    return False
+        
+def lowercase(s):
+    for i in range(len(s)):
+        if(s[i].islower()):
+            return True
+    return False
+        
+def uppercase(s):
+    for i in range(len(s)):
+        if(s[i].isupper()):
+            return True
+    return False
+if __name__ == '__main__':
+    s = input()
+    a=alphanumeric(s)
+    print(a)
+    b=alphabet(s)
+    print(b)
+    c=digit(s)
+    print(c)
+    d=lowercase(s)
+    print(d)
+    e=uppercase(s)
+    print(e)
